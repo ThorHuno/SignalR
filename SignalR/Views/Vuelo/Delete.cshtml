@@ -1,0 +1,72 @@
+﻿@model SignalR.Models.Vuelo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Vuelo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Origen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Origen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Destino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Destino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EsDirecto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EsDirecto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraSalida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraSalida)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraLlegada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraLlegada)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

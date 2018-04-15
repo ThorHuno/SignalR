@@ -1,0 +1,66 @@
+﻿@model SignalR.Models.Vuelo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vuelo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Origen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Origen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Destino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Destino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EsDirecto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EsDirecto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraSalida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraSalida)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraLlegada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraLlegada)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
